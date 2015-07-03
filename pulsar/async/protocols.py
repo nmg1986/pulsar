@@ -448,7 +448,7 @@ class Connection(Protocol, Timeout):
             consumer = self._producer.build_consumer(self._consumer_factory)
             assert self._current_consumer is None, 'Consumer is not None'
             self._current_consumer = consumer
-            self._current_consumer._connection = self 
+            self._current_consumer._connection = self
 
     def _connection_lost(self, _, exc=None):
         '''It performs these actions in the following order:
