@@ -463,7 +463,7 @@ class Connection(Protocol, Timeout):
             self._current_consumer.connection_lost(self)
 
     def _connection_made(self, _, exc=None):
-        '''Handler connection_made event in ProtocolConsumer 
+        '''Handler connection_made event in ProtocolConsumer
            or in its subclass'''
 
         self.current_consumer()
