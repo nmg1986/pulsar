@@ -131,6 +131,7 @@ class EchoProtocol(pulsar.ProtocolConsumer):
     def connection_lost(self, connection):
         self.logger.info("Disconnected from {}".format(connection))
 
+
 class EchoServerProtocol(EchoProtocol):
     '''The :class:`EchoProtocol` used by the echo :func:`server`.
     '''
